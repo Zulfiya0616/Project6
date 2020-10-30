@@ -1,7 +1,8 @@
 
-- name: Install yum
+- name: Install prerequisites
   yum:
     name:
+      - vim
       - wget
       - "{{java.VERSION}}"
     state: present
